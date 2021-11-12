@@ -158,7 +158,7 @@ for (let j = 0; j < 100; j++) {
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
 
 for (let j = 0; j < 100; j++) {
-    if (!j % 2) {continue}
+    if (!(j % 2)) {continue}
     console.log(`!_step_! ${j} `)
     document.write(`!_step_! ${j} <br>`)
 }
