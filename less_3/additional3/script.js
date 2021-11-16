@@ -62,7 +62,7 @@
 
 // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // for (let i = 0; i < arr.length; i += 3) {
-//     if (!(i % 2)) {
+//     if (!(arr[i] % 2)) {
 //         console.log()
 //     }
 // }
@@ -71,7 +71,7 @@
 
 // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // for (let i = 0, j = 0; i < arr.length; i += 3) {
-//     if (!(i % 2)) {
+//     if (!(arr[i] % 2)) {
 //         console.log(arr[i])
 //         arr[j] = arr[i]
 //         j++
