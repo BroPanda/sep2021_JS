@@ -68,17 +68,96 @@ let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18]
 // 7. замінити кожне число кратне 3 на слово "okten"
 
 
-for (let j = 0; j < arr.length; j++) {
-    if (!(arr[j] % 3)) {
-        arr[j] = 'okten';
-    }
-}
-// console.log(arr)
-
-// 8. вивести масив в зворотньому порядку.
-
-for (let i = arr.length - 1; i >= 0; i--) {
-    console.log(arr[i])
-}
+// for (let j = 0; j < arr.length; j++) {
+//     if (!(arr[j] % 3)) {
+//         arr[j] = 'okten';
+//     }
+// }
+// // console.log(arr)
+//
+// // 8. вивести масив в зворотньому порядку.
+//
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i])
+// }
 
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+
+
+// 9-1
+
+// let i = arr.length - 1;
+//
+// while (i >= 0) {
+//     console.log(`${arr[i]}`)
+//     i--
+// }
+
+// for (let j = arr.length - 1;  j >  0; j--) {
+//     console.log(`${arr[j]}`)
+// }
+
+// i = arr.length - 1
+//
+// while (i > 0) {
+//     i--;
+//
+//     if (!(i % 2)) {
+//         continue;
+//     }
+//     console.log(i)
+//     console.log(`${arr[i]}`)
+// }
+
+
+
+// 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+
+// for (let j = arr.length - 1; j > 0; j--) {
+//     if (!(j % 2)) {
+//         continue;
+//     }
+//     console.log(j)
+//     console.log(`${arr[j]}`)
+// }
+
+// 5. перебрати циклом while та вивести  числа тільки парні  значення
+
+
+i = arr.length - 1
+
+// while (i > 0) {
+//     i--;
+//
+//     if (i % 2) {
+//         continue;
+//     }
+//     console.log(i)
+//     console.log(`${arr[i]}`)
+// }
+
+// 6. перебрати циклом for та вивести  числа тільки парні  значення
+
+// for (let j = arr.length - 1; j > 0; j--) {
+//     if (j % 2) {
+//         continue;
+//     }
+//     console.log(j)
+//     console.log(`${arr[j]}`)
+// }
+
+
+// 7. замінити кожне число кратне 3 на слово "okten"
+
+
+// for (let j = arr.length - 1; j > 0; j--) {
+//     if (!(arr[j] % 3)) {
+//         arr[j] = 'okten';
+//     }
+// }
+// console.log(arr)
+
+
+
+
+
