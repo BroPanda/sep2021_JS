@@ -93,7 +93,7 @@ let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18]
 //     i--
 // }
 
-// for (let j = arr.length - 1;  j >  0; j--) {
+// for (let j = arr.length - 1;  j >= 0; j--) {
 //     console.log(`${arr[j]}`)
 // }
 
@@ -113,7 +113,7 @@ let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18]
 
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
 
-// for (let j = arr.length - 1; j > 0; j--) {
+// for (let j = arr.length - 1; j >= 0; j--) {
 //     if (!(j % 2)) {
 //         continue;
 //     }
@@ -126,7 +126,7 @@ let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18]
 
 i = arr.length - 1
 
-// while (i > 0) {
+// while (i >= 0) {
 //     i--;
 //
 //     if (i % 2) {
@@ -138,7 +138,7 @@ i = arr.length - 1
 
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
 
-// for (let j = arr.length - 1; j > 0; j--) {
+// for (let j = arr.length - 1; j >= 0; j--) {
 //     if (j % 2) {
 //         continue;
 //     }
@@ -150,7 +150,7 @@ i = arr.length - 1
 // 7. замінити кожне число кратне 3 на слово "okten"
 
 
-// for (let j = arr.length - 1; j > 0; j--) {
+// for (let j = arr.length - 1; j >= 0; j--) {
 //     if (!(arr[j] % 3)) {
 //         arr[j] = 'okten';
 //     }
