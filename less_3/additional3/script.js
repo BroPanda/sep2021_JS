@@ -42,7 +42,7 @@
 // const arr = []
 //
 // for (let i = 0; i < 20; i++) {
-//     arr[i] = Math.floor(Math.random() * 732) + 8;
+//     arr[i] = Math.floor(Math.random() * (732 - 8) + 8;
 //
 // }
 //
@@ -51,13 +51,17 @@
 
 // 2. Вивести за допомогою console.log кожен третій елемен
 
-// for (let i = 0; i < ; i+=3) {
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// for (let i = 0; i < arr.length; i+=3) {
 //     console.log()
 // }
 
 // 3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
 
-// for (let i = 0; i <; i += 3) {
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// for (let i = 0; i < arr.length; i += 3) {
 //     if (!(i % 2)) {
 //         console.log()
 //     }
@@ -65,12 +69,11 @@
 
 // 4. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив
 
-
-// const arr = []
-// for (let i = 0, j = 0; i < `some length`; i += 3) {
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// for (let i = 0, j = 0; i < arr.length; i += 3) {
 //     if (!(i % 2)) {
-//         console.log()
-//         arr[j] = `some number`
+//         console.log(arr[i])
+//         arr[j] = arr[i]
 //         j++
 //     }
 // }
