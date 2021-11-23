@@ -23,26 +23,29 @@
 
 // - створити функцію яка повертає найбільше число з масиву
 // let arr = [5, 3, 4, 9, 2, 4, 2]
-// let res = arr[0];
-//
-// arr.map((n) => {
-//     if (res < n) {
-//         return res = n
-//     } else return res
-// })
-// console.log(res);
+// let maxNumberOfArray = (array) => {
+//     let a = array[0]
+//     for (const arrayElement of array) {
+//         if (a > arrayElement) {
+//             a = arrayElement
+//         }
+//     }
+//     return a
+// }
+// console.log(maxNumberOfArray);
 
 
 // - створити функцію яка повертає найменьше число з масиву
 // let arr = [5, 3, 4, 9, 2, 4, 2]
-// let res = arr[0];
-//
-// arr.map((n) => {
-//     if (res > n) {
-//         return res = n
-//     } else return res
-// })
-// console.log(res);
+// let minNumberOfArray = (array) => {
+//     let a = array[0]
+//     for (const arrayElement of array) {
+//         if (a < arrayElement) {
+//             a = arrayElement
+//         }
+//     }
+//     return a
+// }
 
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
@@ -96,8 +99,8 @@
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 // let arrayCreator = (n) => {
 //     let arr = []
-//     for (let i = 0; i < n; i++) {
-//         arr[i] = Math.floor(Math.random() * 10)
+//     for (let i = 0; i < 10; i++) {
+//         arr[i] = Math.floor(Math.random() * n)
 //     }
 //     return arr
 // }

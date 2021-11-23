@@ -65,11 +65,11 @@
 // let arr = [0,0,1,0]
 //
 // let arrSortZeroEnd = (array) => {
-//     arrSort = []
+//     let arrSort = []
 //     let wasZero = false
 //
 //     for (let i = 0, j = 0; i < array.length; i++) {
-//         if (array[i] != 0) {
+//         if (array[i] !== 0) {
 //             arrSort[j] = array[i]
 //             j++
 //         } else wasZero = true

@@ -13,7 +13,11 @@
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 // let arr = [1, 2, 3, 5, 6]
-// console.log(arr.map((n) => n))
+// let showElement = (array) => {
+//     for (const arrayElement of array) {
+//         console.log(arrayElement);
+//     }
+// }
 
 
 // - створити функцію яка  створює параграф з текстом. Текст задати через аргумент
@@ -39,7 +43,7 @@
 // let ul_text = (t, row) => {
 //     document.write(`<ul>`)
 //     for (let i = 0; i < row; i++) {
-//         document.write(`<ul>${t}</ul>`)
+//         document.write(`<li>${t}</li>`)
 //     }
 //     document.write(`</ul>`)
 // }
@@ -50,7 +54,7 @@
 // let ul_text = (ar) => {
 //     document.write(`<ul>`)
 //     for (const arElement of ar) {
-//         document.write(`<ul>${arElement}</ul>`)
+//         document.write(`<li>${arElement}</li>`)
 //     }
 //     document.write(`</ul>`)
 // }
