@@ -232,3 +232,12 @@ let word = '';
 //     word += arrElement
 // }
 // console.log(word);
+
+
+
+
+
+
+
+
+
