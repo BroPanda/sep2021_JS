@@ -32,7 +32,7 @@
 //     }
 //     return a
 // }
-// console.log(maxNumberOfArray);
+// console.log(maxNumberOfArray());
 
 
 // - створити функцію яка повертає найменьше число з масиву
@@ -50,15 +50,25 @@
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 // let arr = [5, 3, 4, 9, 2, 4, 2]
-// let sum = 0
-// arr.map((n) => sum += n)
-// console.log(sum)
+// let sum = (array) => {
+//     a = 0
+//     for (const arrayElement of array) {
+//         a += arrayElement
+//     }
+//     return a
+// }
+// sum(arr)
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 // let arr = [5, 3, 4, 9, 2, 4, 2]
-// let sum = 0
-// arr.map((n) => sum += n)
-// console.log(sum / arr.length)
+// let sum = (array) => {
+//     a = 0
+//     for (const arrayElement of array) {
+//         a += arrayElement
+//     }
+//     return a / array.length
+// }
+// sum(arr)
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 // let minResult = (...arr) => {
