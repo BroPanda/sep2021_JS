@@ -106,6 +106,7 @@ let coursesAndDurationArray = [
 //
 // console.log(cutString('наслаждение', 3));
 
+
 // віріант 2
 // let str = 'наслаждение'
 //
