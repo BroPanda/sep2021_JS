@@ -93,7 +93,7 @@ let coursesAndDurationArray = [
 
 // - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
 // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
-//
+// віріант 1
 // let str = 'наслаждение'
 //
 // let cutString = (someWord, cutNum) => {
@@ -102,6 +102,21 @@ let coursesAndDurationArray = [
 //         split[i - 1] += ','
 //     }
 //     return split.join('')
+// }
+//
+// console.log(cutString('наслаждение', 3));
+
+// віріант 2
+// let str = 'наслаждение'
+//
+// let cutString = (someWord, cutNum) => {
+//     let split = someWord.split('');
+//     let map = split.map((value, index) => {
+//         if (!(index % 3) && index != 0) {
+//             return ',' + value
+//         } else return value
+//     })
+//     return map.join('')
 // }
 //
 // console.log(cutString('наслаждение', 3));
