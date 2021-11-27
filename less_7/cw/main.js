@@ -115,7 +115,7 @@
 // const findPrinceLove = (popelsArr, prince) => {
 //     for (const item of popelsArr) {
 //         if (item.footSize === prince.findBoot) {
-//             return `${item.name}`
+//             return ` ${item.name}`
 //         }
 //     }
 // };
