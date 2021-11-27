@@ -159,11 +159,7 @@ let arrayTags = [
                 titleOfAttr: 'align',
                 actionOfAttr: 'Задает выравнивание содержимого тега < div >.'
 
-            }, {
-            titleOfAttr: 'class',
-            actionOfAttr: 'Определяет имя класса, которое позволяет связать тег со стилевым оформлением.'
-
-        },
+            }
         ]
     )
 ]
