@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    border: 1px solid #082ab2;
+    margin: 5px;
+    padding: 5px;
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.monthDurationDiv{
+    width: 30%;
+    flex-wrap: wrap;
+}
+.hourDurationDiv{
+    width: 69%;
+}
+
+.modules{
+    border: 1px solid red;
+    margin: 5px;
+    padding: 5px;
+}
