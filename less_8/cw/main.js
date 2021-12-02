@@ -81,5 +81,4 @@ for (const dTagElement of dTag) {
 
 // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
 let text2Class = document.getElementsByClassName("text2");
-text2Class[0].innerText = 'sep-2021'
-console.log(text2Class);
+text2Class[0].innerText = 'sep-2021';
