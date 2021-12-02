@@ -172,5 +172,5 @@ for (const arrayTag of arrayTags) {
         document.write(`<p>${attrsElement.titleOfAttr} - ${attrsElement.actionOfAttr}<\p>
      `)
     }
-    document.write('<br> <br><br>')
+    document.write('<br><br><br>')
 }
