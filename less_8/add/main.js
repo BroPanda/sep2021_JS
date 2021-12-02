@@ -8,13 +8,10 @@ console.log(bodyChildren);
 
 function rec(Children) {
     for (const Child of Children) {
-        if (Child.classList.value) {
-            arr.push(Child.classList.value);
+        if (Child.className) {
+            arr.push(Child.className);
             if (Child.children) {
-                for (const c of Child.children) {
-                    console.log('aaaaaaa')
-
-                }
+                rec(Child.children)
             }
         }
     }
