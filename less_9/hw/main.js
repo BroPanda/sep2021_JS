@@ -58,6 +58,7 @@ for (const Element of coursesAndDurationArray) {
 let htmlDivElement3 = document.createElement('div');
 let htmlH1 = document.createElement('h1');
 let htmlP = document.createElement('p');
+
 for (const Element of coursesAndDurationArray) {
     htmlDivElement3.setAttribute('class', 'item')
     htmlH1.setAttribute('class', 'heading')
