@@ -45,8 +45,6 @@ task3Id.append(inputAge, btnAge, divAgeInfo)
 let divMenu = document.getElementById('menu');
 let btnHide = document.getElementById('hide');
 
-console.log(divMenu);
-
 btnHide.onclick = function () {
     if (divMenu.style.display === ''){
         divMenu.style.display = 'none';
@@ -69,26 +67,38 @@ let arrComments = [
     {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
     {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
     {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
-    {title : 'lorem', body:'lorem ipsum dolo sit ameti'},
+    {title : 'lorem', body:'lorem ipsum dolo sit ameti'}
 ]
+
 
 let divTask5 = document.getElementById('task5')
 
-for (const key in arrComments) {
+for (const comment of arrComments) {
     let divComment = document.createElement('div');
+    let divText = document.createElement('div');
     let divTitle = document.createElement('div');
     let divBody = document.createElement('div');
-    let btnComm = document.createElement('button')
+    let btnComm = document.createElement('button');
 
-    btnComm.id = ``
+    divTitle.innerText = comment.title;
+    divBody.innerText = comment.body;
+    btnComm.innerText = `close msg`;
 
+    btnComm.onclick = function () {
+        btnComm.previousElementSibling.classList.toggle('hidden')
+        if (btnComm.innerText === `close msg`){
+            btnComm.innerText = `open msg`;
+        } else btnComm.innerText = `close msg`;
+    }
 
-
-
-
-    divComment.append(divTitle, divBody)
+    divText.append(divTitle, divBody)
+    divComment.append(divText, btnComm)
     divTask5.append(divComment)
 }
+
+
+
+
 
 
 
