@@ -51,36 +51,36 @@ let usersWithAddress = [
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
 
-let divUsers = document.createElement('div')
-
-let checkBox1 = document.createElement('input')
-checkBox1.setAttribute('type', 'checkbox')
-
-let checkBox2 = document.createElement('input')
-checkBox2.setAttribute('type', 'checkbox')
-
-let checkBox3 = document.createElement('input')
-checkBox3.setAttribute('type', 'checkbox')
-
-divUsers.append(checkBox1, checkBox2, checkBox3)
-document.body.append(divUsers)
-
-console.log(checkBox1);
-
-let div = document.createElement('div')
-
-onclick = function (){
-    users = usersWithAddress.filter(value =>
-        value.status === true && checkBox1.checked ||
-        value.age >= 29 && checkBox2.checked ||
-        value.address.city === 'Kyiv' && checkBox3.checked)
-
-    div.innerText = ''
-    for (const user of users) {
-        div.innerText += `${user.id} ${user.name} ${user.age} ${user.status} ${user.address.city}`
-    }
-    divUsers.append(div)
-}
+// let divUsers = document.createElement('div')
+//
+// let checkBox1 = document.createElement('input')
+// checkBox1.setAttribute('type', 'checkbox')
+//
+// let checkBox2 = document.createElement('input')
+// checkBox2.setAttribute('type', 'checkbox')
+//
+// let checkBox3 = document.createElement('input')
+// checkBox3.setAttribute('type', 'checkbox')
+//
+// divUsers.append(checkBox1, checkBox2, checkBox3)
+// document.body.append(divUsers)
+//
+// console.log(checkBox1);
+//
+// let div = document.createElement('div')
+//
+// onclick = function (){
+//     users = usersWithAddress.filter(value =>
+//         value.status === true && checkBox1.checked ||
+//         value.age >= 29 && checkBox2.checked ||
+//         value.address.city === 'Kyiv' && checkBox3.checked)
+//
+//     div.innerText = ''
+//     for (const user of users) {
+//         div.innerText += `${user.id} ${user.name} ${user.age} ${user.status} ${user.address.city}`
+//     }
+//     divUsers.append(div)
+// }
 
 
 
