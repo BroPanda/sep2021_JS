@@ -2,13 +2,30 @@
 //     При лівому кліку миші вивести в консоль інформацію про блок або елемент на який відбувся клік.
 //     Інформація яку потрібно вивести: Назва тегу, список класів, список ід, розміри в форматі висота*ширина
 
-
+// onclick = function (e) {
+//     console.log(e);
+//     console.log(`element: ${e.target.localName}, have classes: ${e.target.className}, id: ${e.target.id},
+//     and have size h: ${e.target.clientHeight}px w: ${e.target.clientWidth}px`)
+// }
 
 //
 // - Описати скріпт, котрий, якщо доєднати до будь-якої сторінки дозволить зробити наступне:
 //     При лівому кліку миші  зробить popup (спливаючий блок) в якому буде вся інформація про блок.
 //     Інформація яку потрібно вивести в popup: Назва тегу, список класів, список ід, розміри в форматі висота*ширина
-//
+
+onclick = function (e) {
+    let popupClass = document.getElementsByClassName('popup')[0]
+    let popupText = document.getElementsByClassName('popup_text')[0]
+    popupClass.style.opacity = '1';
+    popupClass.style.visibility = 'visible';
+
+    popupText.innerText = `element: ${e.target.localName}
+     have classes: ${e.target.className}
+     id: ${e.target.id},
+     have size h: ${e.target.clientHeight}px w: ${e.target.clientWidth}px`
+}
+
+
 // -- взять массив пользователей
 // let usersWithAddress = [
 //     {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
