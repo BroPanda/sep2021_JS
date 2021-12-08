@@ -42,8 +42,6 @@ let usersWithAddress = [
 ];
 
 
-
-
 // - Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива. Фильтры могут работать
 // как вместе так и по отдельности.
 // 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
@@ -71,9 +69,9 @@ let usersWithAddress = [
 //
 // onclick = function (){
 //     users = usersWithAddress.filter(value =>
-//         value.status === true && checkBox1.checked ||
-//         value.age >= 29 && checkBox2.checked ||
-//         value.address.city === 'Kyiv' && checkBox3.checked)
+//         (value.status === false && checkBox1.checked )||
+//         (value.age >= 29 && checkBox2.checked) ||
+//         (value.address.city === 'Kyiv' && checkBox3.checked))
 //
 //     div.innerText = ''
 //     for (const user of users) {
@@ -83,15 +81,138 @@ let usersWithAddress = [
 // }
 
 
-
-
-//
-// *****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
-// при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к следующему дочернему элементу (лежащему на одном уровне)
-// НО если у (какого-либо)дочеренего элемента есть дети, то нажатие "вперед" позволяет нам войти внутрь элемента и  выводит первого ребенка. и тд.
-//     Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с ним на одном уровне
-//
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+
+// let arrImg = [
+//     {id: 0, img: 'img/1.jpg'},
+//     {id: 1, img: 'img/2.jpg'},
+//     {id: 2, img: 'img/3.jpg'},
+// ]
 //
+// let button1 = document.getElementById('prev')
+// let button2 = document.getElementById('next')
+// let carouselImg = document.getElementsByClassName('carousel_img')[0]
+//
+// for (let j = 0; j < arrImg.length; j++) {
+//     let img = document.createElement('img')
+//     img.id = `img${j}`
+//     img.src = arrImg[j].img
+//     carouselImg.append(img)
+// }
+//
+// let i = 0;
+// carouselImg.children[i].style.opacity = '1';
+// carouselImg.children[i].style.visibility = 'visible';
+//
+//
+// button1.onclick = () => {
+//     if (i > 0) {
+//         carouselImg.children[i].style.opacity = '0';
+//         carouselImg.children[i].style.visibility = 'hidden';
+//         i--;
+//         carouselImg.children[i].style.opacity = '1';
+//         carouselImg.children[i].style.visibility = 'visible';
+//
+//     } else {
+//         carouselImg.children[i].style.opacity = '0';
+//         carouselImg.children[i].style.visibility = 'hidden';
+//         i = arrImg.length - 1;
+//         carouselImg.children[i].style.opacity = '1';
+//         carouselImg.children[i].style.visibility = 'visible';
+//     }
+//     console.log(i);
+// }
+//
+// button2.onclick = () => {
+//     if (i < arrImg.length - 1) {
+//         carouselImg.children[i].style.opacity = '0';
+//         carouselImg.children[i].style.visibility = 'hidden';
+//         i++;
+//         carouselImg.children[i].style.opacity = '1';
+//         carouselImg.children[i].style.visibility = 'visible';
+//
+//     } else {
+//         carouselImg.children[i].style.opacity = '0';
+//         carouselImg.children[i].style.visibility = 'hidden';
+//         i = 0;
+//         carouselImg.children[i].style.opacity = '1';
+//         carouselImg.children[i].style.visibility = 'visible';
+//     }
+//     console.log(i);
+// }
+
+
+//
+
 //     Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
-// *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+// *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом
+// змінює свій стан
+
+
+
+let p = document.getElementsByClassName('p')[0]
+onmouseup = () => {
+    selection = window.getSelection().toString();
+    let str = selection.bold().italics()
+    p.innerHTML = p.innerText.replace(selection, str);
+}
+
+// *****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .\
+// Функция создает
+// в боди 2 кнопки (назад/вперед)
+// при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к
+// следующему дочернему элементу (лежащему на одном уровне)
+// НО если у (какого-либо)дочеренего элемента есть дети, то нажатие "вперед" позволяет нам войти внутрь элемента и
+// выводит первого ребенка. и тд.
+//     Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с
+//     ним на одном уровне
+
+
+let ddosDiv = document.getElementsByClassName(`xxx`)[0];
+let button1 = document.createElement('button');
+let button2 = document.createElement('button');
+button1.innerText = 'назад';
+button2.innerText = 'вперед';
+
+ddosDiv.append(button1 , button2)
+
+console.log(ddosDiv);
+
+let arr = []
+
+function rec(fatherDiv) {
+    for (let i = 0; i < fatherDiv.children.length; i++) {
+        arr.push(`${fatherDiv.children[i].nodeName}`)
+        if (fatherDiv.children[i].children.length) {
+            rec(fatherDiv.children[i])
+        }
+    }
+}
+
+let i = 0;
+
+button1.onclick = () => {
+    if (i > 0){
+        console.log(arr[i]);
+        i--
+    } else i = arr.length;
+}
+
+button2.onclick = () => {
+    if (i< arr.length){
+        console.log(arr[i]);
+        i++
+    } else i = 0;
+}
+
+rec(ddosDiv)
+
+
+
+
+
+
+
+
+
+

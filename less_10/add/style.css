@@ -1,4 +1,4 @@
-.popup{
+.popup {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -9,10 +9,10 @@
     opacity: 0;
     visibility: hidden;
 
-    transition: 0.8s;
+    transition: 2s;
 }
 
-.popup_body{
+.popup_body {
     min-height: 100%;
     display: flex;
     align-items: center;
@@ -20,17 +20,75 @@
     padding: 30px;
 }
 
-.popup_content{
+.popup_content {
     background: white;
     padding: 30px;
     position: relative;
 }
 
-.popup_close{
+.popup_close {
     position: absolute;
     right: 5px;
     top: 5px;
     text-decoration: none;
+}
 
+/*_________________ CAROUSEL __________________*/
+
+.carousel_block {
+    height: 500px;
+    width: 100%;
+    background: rgba(128, 128, 128, 0.51);
+    position: relative;
+}
+
+.carousel_img {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100px;
+    width: 30px;
+    border-radius: 0 10px 10px 0;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 2px 2px 30px #050505;
+}
+
+/*________DDOS TASK _____________*/
+
+.xxx {
+    height: 200px;
+    width: 100%;
+    background: aliceblue   ;
+}
+
+#next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    height: 100px;
+    width: 30px;
+    border-radius: 10px 0 0 10px;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 2px 2px 30px #050505;
 }
 
