@@ -49,36 +49,36 @@ let usersWithAddress = [
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
 
-// let divUsers = document.createElement('div')
-//
-// let checkBox1 = document.createElement('input')
-// checkBox1.setAttribute('type', 'checkbox')
-//
-// let checkBox2 = document.createElement('input')
-// checkBox2.setAttribute('type', 'checkbox')
-//
-// let checkBox3 = document.createElement('input')
-// checkBox3.setAttribute('type', 'checkbox')
-//
-// divUsers.append(checkBox1, checkBox2, checkBox3)
-// document.body.append(divUsers)
-//
-// console.log(checkBox1);
-//
-// let div = document.createElement('div')
-//
-// onclick = function (){
-//     users = usersWithAddress.filter(value =>
-//         (value.status === false && checkBox1.checked )||
-//         (value.age >= 29 && checkBox2.checked) ||
-//         (value.address.city === 'Kyiv' && checkBox3.checked))
-//
-//     div.innerText = ''
-//     for (const user of users) {
-//         div.innerText += `${user.id} ${user.name} ${user.age} ${user.status} ${user.address.city}`
-//     }
-//     divUsers.append(div)
-// }
+let divUsers = document.createElement('div')
+
+let checkBox1 = document.createElement('input')
+checkBox1.setAttribute('type', 'checkbox')
+
+let checkBox2 = document.createElement('input')
+checkBox2.setAttribute('type', 'checkbox')
+
+let checkBox3 = document.createElement('input')
+checkBox3.setAttribute('type', 'checkbox')
+
+divUsers.append(checkBox1, checkBox2, checkBox3)
+document.body.append(divUsers)
+
+console.log(checkBox1);
+
+let div = document.createElement('div')
+
+onclick = function () {
+    let users = usersWithAddress;
+    if (checkBox1.checked) users = users.filter(value => value.status === false)
+    if (checkBox2.checked) users = users.filter(value => value.age >= 29)
+    if (checkBox3.checked) users = users.filter(value => value.address.city === 'Kyiv')
+
+    div.innerText = ''
+    for (const user of users) {
+        div.innerText += `${user.id} ${user.name} ${user.age} ${user.status} ${user.address.city}`
+    }
+    divUsers.append(div)
+}
 
 
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
@@ -149,7 +149,6 @@ let usersWithAddress = [
 // змінює свій стан
 
 
-
 let p = document.getElementsByClassName('p')[0]
 onmouseup = () => {
     selection = window.getSelection().toString();
@@ -174,7 +173,7 @@ let button2 = document.createElement('button');
 button1.innerText = 'назад';
 button2.innerText = 'вперед';
 
-ddosDiv.append(button1 , button2)
+ddosDiv.append(button1, button2)
 
 console.log(ddosDiv);
 
@@ -192,14 +191,14 @@ function rec(fatherDiv) {
 let i = 0;
 
 button1.onclick = () => {
-    if (i > 0){
+    if (i > 0) {
         console.log(arr[i]);
         i--
     } else i = arr.length;
 }
 
 button2.onclick = () => {
-    if (i< arr.length){
+    if (i < arr.length) {
         console.log(arr[i]);
         i++
     } else i = 0;
