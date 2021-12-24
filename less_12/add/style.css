@@ -1,0 +1,43 @@
+body {
+    background: #2a2a2a;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 80%;
+    background: #1c1c1c;
+    text-align: center;
+    color: #a97110;
+
+}
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.divComment {
+    color: #c0a57a;
+}
+
+.post {
+    min-height: 300px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #94640d;
+    border-radius: 5px;
+    position: relative;
+}
+
+.postBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #94640d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
