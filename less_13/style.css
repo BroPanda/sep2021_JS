@@ -1,0 +1,9 @@
+.item {
+    width: 300px;
+    border: 1px solid red;
+}
+
+.item img{
+    width: 300px;
+    height: 100px;
+}

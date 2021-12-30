@@ -28,7 +28,7 @@ for (const user of users) {
     let btnAddFavorite = document.createElement('button');
 
     divUserInfo.innerText = `${user.name} ${user.age} ${user.status} `;
-    btnAddFavorite.innerText = 'add to fav';
+    btnAddFavorite.innerText = 'hw to fav';
 
     divUser.append(divUserInfo, btnAddFavorite);
     divUsers.append(divUser);
