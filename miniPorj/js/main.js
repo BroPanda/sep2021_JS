@@ -50,6 +50,7 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
             usersDiv.append(userDiv)
 
             userDetailBtn.onclick = () => {
+                console.log(`${user.id}`)
                 localStorage.setItem('user', user.id)
                 location.href = 'user-details.html'
             }
