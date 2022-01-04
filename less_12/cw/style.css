@@ -24,7 +24,7 @@ body {
 }
 
 .post {
-    height: 300px;
+    min-height: 150px;
     width: 18%;
     padding: 5px;
     border: 1px solid #94640d;
@@ -40,4 +40,11 @@ body {
     color: white;
     padding: 5px 10px;
     border-radius: 7px;
+}
+
+.postInfo{
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #94640d;
 }
